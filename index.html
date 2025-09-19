@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Chat Widget Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .demo-container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        p {
+            color: #6b7280;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .instructions {
+            background: #f3f4f6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #4f46e5;
+        }
+        
+        .instructions ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+            color: #374151;
+        }
+        
+        .embed-code {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            text-align: left;
+            margin: 20px 0;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+        
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #dcfce7;
+            color: #166534;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+        
+        .status::before {
+            content: "●";
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🚀 Universal Chat Widget</h1>
+        <p>A production-ready chatbot widget that can be embedded on any website with a single script tag.</p>
+        
+        <div class="status">
+            Widget is active and ready to use
+        </div>
+        
+        <div class="instructions">
+            <h3>Try the Demo:</h3>
+            <ol>
+                <li>Look for the floating chat bubble in the bottom-right corner</li>
+                <li>Click the bubble to open the chat interface</li>
+                <li>Type "hello" and press enter</li>
+                <li>Watch the bot respond with a demo message</li>
+                <li>Use the X button to close the chat</li>
+            </ol>
+        </div>
+        
+        <div class="instructions">
+            <h3>Embed on Your Website:</h3>
+            <div class="embed-code">
+&lt;script src="https://your-domain.com/app.js"&gt;&lt;/script&gt;
+            </div>
+            <p style="font-size: 14px; color: #6b7280; margin-top: 10px;">
+                Just add this one line to any webpage and the chat widget will appear automatically.
+            </p>
+        </div>
+        
+        <div class="instructions">
+            <h3>Features:</h3>
+            <ul style="text-align: left; color: #374151;">
+                <li>✅ Floating chat bubble with smooth animations</li>
+                <li>✅ Responsive design (mobile & desktop)</li>
+                <li>✅ Secure iframe-based architecture</li>
+                <li>✅ PostMessage communication</li>
+                <li>✅ Unread message indicators</li>
+                <li>✅ Keyboard navigation support</li>
+                <li>✅ Demo bot responses</li>
+                <li>✅ Production-ready code</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Load the Universal Chat Widget -->
+    <script src="app.js"></script>
+</body>
+</html>
